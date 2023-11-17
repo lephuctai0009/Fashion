@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <div>
+    <head>
+        <title>Mindx Technology School1</title>
+        <meta charset="utf-8">
+          <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+            html {
+                height: 100%;
+            }
+              .login {
+                border: 1px solid black;
+                border-radius: 10px;
+                background-color: #6cb78a; 
+                text-align: center;
+                width: 260px;
+                height: 320px;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+
+            } 
+           .color {color: black;}
+            button{
+                background-color: rgb(72, 143, 54);
+                color: black;
+            }
+            input {
+                width: 150px;
+                height: 30px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid black;
+                padding-left: 20px;
+            }
+            button {
+                width: 110px;
+                height: 30px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid black;
+                padding-left: 20px;
+            }
+          </style>       
+       
+    </head>
+    <body>
+        
+        <div class="login" >  
+            <div id="show"></div>
+              <div class="input">
+              <h1 class="color">Login</h1>  
+              <label class="color" for="username">Username</label>           
+              <input type="text" placeholder="Username" id="user">
+              <p></p>
+              </div>
+              <div class="input">
+              <label class="color" for="password">Password</label>   
+              <input id="pass" type="password" placeholder="Password">
+              </div>
+              <p id="p1"></p>
+              <button onclick="return checkform()" >Login</button>   
+        </div>
+       <script>
+        function checkform(){
+            var user = document.getElementById("user");
+            var pass = document.getElementById("pass");
+            var kq1 =`Đăng nhập thành công
+                    Tên đăng nhập:`+ user.value +`
+                    Mật khẩu:`+ pass.value +``
+            if (user.value != ""){
+                if (user.value.length < 8){
+                    alert("Vui lòng nhập tên đăng nhập >= 8 Kí tự");
+                    user.focus();
+                    return false;
+                }
+            }else{
+                alert("Vui lòng nhập tên đăng nhập");
+                user.focus();
+                return false;
+            }
+            if (pass.value != ""){
+                if (pass.value.length < 8){
+                    alert("Vui lòng nhập mật khẩu >= 8 Kí tự");
+                    pass.focus();
+                    return false;
+                }
+            }else{
+                alert("Vui lòng nhập mật khẩu");
+                user.focus();
+                return false;
+            }
+            if ((user.value == "lephuctai" && pass.value == "13111998")) {
+                window.location="http://127.0.0.1:5501/index.html";
+                alert(kq1);
+            }else{
+                alert("Đăng nhập thất bại")
+            } return false; 
+        }
+       </script>
+    </body>
+</html>
