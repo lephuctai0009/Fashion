@@ -407,7 +407,7 @@ hr{
   }
   
 .quantity-btn {
-    background-color: #4CAF50;
+    background-color: #000000;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -456,6 +456,10 @@ h3 {
 }
 /* sTYLE cho trang product */
 /* Résbonsive */
+
+@media only screen and (max-width: 1024px){
+    
+}
 @media only screen and (max-width: 740px){
     
 }
@@ -465,10 +469,11 @@ h3 {
         justify-content: center;
     }
     ol.container_body {
-        width: 70%;
+        width: 77%;
     }
     .contact {
         flex-wrap: wrap;
+        padding-right: 2px;
     }
     .contact_list {
         width: 50%;
