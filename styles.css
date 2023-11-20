@@ -478,10 +478,10 @@ h3 {
     }
     .contact {
         flex-wrap: wrap;
-        padding-bottom: 2px;
     }
     .contact_list {
         width: 100%;
+        margin-bottom: 2px;
     }
     .sp {
         flex-direction: column;
