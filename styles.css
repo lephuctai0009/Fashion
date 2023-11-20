@@ -54,7 +54,10 @@ header.sticky #logo{
     margin-bottom: 8px;
 }
 #home_logo {
-    font-size: 30px;
+    font-size: 35px;
+    border: none;
+    color: #000;
+    background-color: #ffffff;
 }
 #logo img {
     width: 40px;
@@ -221,7 +224,7 @@ h1 {
     text-transform:uppercase;
 }
 .container_list a img {
-    width: 270px;
+    width: 280px;
     height: 400px;
     display: flex;
 }
@@ -457,18 +460,80 @@ h3 {
 /* sTYLE cho trang product */
 /* Résbonsive */
 
-@media only screen and (max-width: 1024px){
-    
-}
 @media only screen and (max-width: 740px){
-    
+    .container {
+       width: 90%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+      
+    }
+    .container_body {
+      
+    }
+    .container_list a img{
+        width: 370px;
+        height: 500px;
+    }
+    .contact {
+        flex-wrap: wrap;
+        padding-bottom: 2px;
+    }
+    .contact_list {
+        width: 100%;
+    }
+    .sp {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 850px;
+    }
+    .sp_list {
+        width: 75%;
+    }
+    .sp_img {
+        width: 60%;
+    }
+    .end_list {
+        flex-wrap: wrap;
+    }
+
+    /* Thanh nav */
+    .inputrbs {
+        display: none;
+    }
+    #menu a {
+        display: none;
+    }
+    .search i{
+        font-size: 35px;
+        
+        margin-right: -35px;
+    }
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-img {
+        margin-top: 111px;
+    }
+    .product-list{
+        margin-top: 15px;
+    }
+    .end-shoping a {
+        display: flex;
+        margin-bottom: 2px;
+    }
 }
 @media only screen and (min-width: 740px) and (max-width: 1024px){
     .container {
         display: flex;
         justify-content: center;
     }
-    ol.container_body {
+    .container_body {
         width: 77%;
     }
     .contact {
@@ -484,8 +549,26 @@ h3 {
         align-items: center;
         height: 650px;
     }
+    .sp_list {
+        width: 75%;
+    }
+    .sp_img {
+        width: 32%;
+    }
     /* Thanh nav */
     .inputrbs {
         display: none;
     }
+    /* responsive trang product */
+    .end-shoping {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .end-shoping a {
+        width: 400px;
+        margin-bottom: 2px;
+        padding-left: 35%;
+    }
+    
 }
