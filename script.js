@@ -25,10 +25,9 @@ $(document).ready(function(){
           $('html, body').animate({scrollTop: 0}, 500);
       });
   });
-//   
+//   Làm hình ảnh slide
 let slideIndex = 0;
 showSlides();
-
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -40,7 +39,7 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 2000); // Thay đổi hình ảnh mỗi 2 giây (2000 milliseconds)
+  setTimeout(showSlides, 2000); 
 }
 // 
 // tạo nút tăng giảm số lượng
@@ -62,9 +61,7 @@ increaseBtn.addEventListener('click', function() {
 });
 // Tạo nút chọn size quần áo
 function changeColor(button) {
-  // Kiểm tra trạng thái của nút
   var isClicked = button.classList.toggle('clicked');
-  // Nếu đã được nhấn lần 2, chuyển về trạng thái ban đầu
   if (!isClicked) {
     button.classList.remove('clicked');
   }
